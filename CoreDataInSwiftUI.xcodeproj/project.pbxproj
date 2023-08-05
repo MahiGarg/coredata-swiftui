@@ -8,21 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		E91DC7932A7D0F9A00204D00 /* CoreDataInSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7922A7D0F9A00204D00 /* CoreDataInSwiftUIApp.swift */; };
-		E91DC7952A7D0F9A00204D00 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7942A7D0F9A00204D00 /* ContentView.swift */; };
 		E91DC7972A7D0F9C00204D00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91DC7962A7D0F9C00204D00 /* Assets.xcassets */; };
 		E91DC79A2A7D0F9C00204D00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E91DC7992A7D0F9C00204D00 /* Preview Assets.xcassets */; };
-		E91DC79C2A7D0F9C00204D00 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC79B2A7D0F9C00204D00 /* Persistence.swift */; };
 		E91DC79F2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91DC79D2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodeld */; };
+		E91DC7A72A7D0FB500204D00 /* EmployeeModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7A52A7D0FB500204D00 /* EmployeeModel.xcdatamodeld */; };
+		E91DC7AD2A7D101C00204D00 /* EmployeeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7AC2A7D101C00204D00 /* EmployeeViewModel.swift */; };
+		E91DC7AF2A7D1DCF00204D00 /* EmployeeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7AE2A7D1DCF00204D00 /* EmployeeView.swift */; };
+		E91DC7B22A7D282B00204D00 /* EmployeeEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7B02A7D282B00204D00 /* EmployeeEntity+CoreDataClass.swift */; };
+		E91DC7B32A7D282B00204D00 /* EmployeeEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E91DC7B12A7D282B00204D00 /* EmployeeEntity+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E91DC78F2A7D0F9A00204D00 /* CoreDataInSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataInSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E91DC7922A7D0F9A00204D00 /* CoreDataInSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataInSwiftUIApp.swift; sourceTree = "<group>"; };
-		E91DC7942A7D0F9A00204D00 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E91DC7962A7D0F9C00204D00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E91DC7992A7D0F9C00204D00 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		E91DC79B2A7D0F9C00204D00 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		E91DC79E2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataInSwiftUI.xcdatamodel; sourceTree = "<group>"; };
+		E91DC7A62A7D0FB500204D00 /* EmployeeModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EmployeeModel.xcdatamodel; sourceTree = "<group>"; };
+		E91DC7AC2A7D101C00204D00 /* EmployeeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeViewModel.swift; sourceTree = "<group>"; };
+		E91DC7AE2A7D1DCF00204D00 /* EmployeeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeView.swift; sourceTree = "<group>"; };
+		E91DC7B02A7D282B00204D00 /* EmployeeEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmployeeEntity+CoreDataClass.swift"; path = "CoreDataInSwiftUI/EmployeeEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		E91DC7B12A7D282B00204D00 /* EmployeeEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "EmployeeEntity+CoreDataProperties.swift"; path = "CoreDataInSwiftUI/EmployeeEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,6 +45,8 @@
 		E91DC7862A7D0F9A00204D00 = {
 			isa = PBXGroup;
 			children = (
+				E91DC7B02A7D282B00204D00 /* EmployeeEntity+CoreDataClass.swift */,
+				E91DC7B12A7D282B00204D00 /* EmployeeEntity+CoreDataProperties.swift */,
 				E91DC7912A7D0F9A00204D00 /* CoreDataInSwiftUI */,
 				E91DC7902A7D0F9A00204D00 /* Products */,
 			);
@@ -56,11 +64,12 @@
 			isa = PBXGroup;
 			children = (
 				E91DC7922A7D0F9A00204D00 /* CoreDataInSwiftUIApp.swift */,
-				E91DC7942A7D0F9A00204D00 /* ContentView.swift */,
 				E91DC7962A7D0F9C00204D00 /* Assets.xcassets */,
-				E91DC79B2A7D0F9C00204D00 /* Persistence.swift */,
 				E91DC79D2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodeld */,
 				E91DC7982A7D0F9C00204D00 /* Preview Content */,
+				E91DC7A52A7D0FB500204D00 /* EmployeeModel.xcdatamodeld */,
+				E91DC7AC2A7D101C00204D00 /* EmployeeViewModel.swift */,
+				E91DC7AE2A7D1DCF00204D00 /* EmployeeView.swift */,
 			);
 			path = CoreDataInSwiftUI;
 			sourceTree = "<group>";
@@ -143,10 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E91DC79C2A7D0F9C00204D00 /* Persistence.swift in Sources */,
-				E91DC7952A7D0F9A00204D00 /* ContentView.swift in Sources */,
+				E91DC7B32A7D282B00204D00 /* EmployeeEntity+CoreDataProperties.swift in Sources */,
+				E91DC7A72A7D0FB500204D00 /* EmployeeModel.xcdatamodeld in Sources */,
+				E91DC7AF2A7D1DCF00204D00 /* EmployeeView.swift in Sources */,
 				E91DC7932A7D0F9A00204D00 /* CoreDataInSwiftUIApp.swift in Sources */,
 				E91DC79F2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodeld in Sources */,
+				E91DC7B22A7D282B00204D00 /* EmployeeEntity+CoreDataClass.swift in Sources */,
+				E91DC7AD2A7D101C00204D00 /* EmployeeViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +366,16 @@
 			);
 			currentVersion = E91DC79E2A7D0F9C00204D00 /* CoreDataInSwiftUI.xcdatamodel */;
 			path = CoreDataInSwiftUI.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		E91DC7A52A7D0FB500204D00 /* EmployeeModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E91DC7A62A7D0FB500204D00 /* EmployeeModel.xcdatamodel */,
+			);
+			currentVersion = E91DC7A62A7D0FB500204D00 /* EmployeeModel.xcdatamodel */;
+			path = EmployeeModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
